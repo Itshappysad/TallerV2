@@ -1,0 +1,5 @@
+rootProject.name = 'TallerV2'
+// Incluye los tres modulos del sistema d i s t r i b u i d o
+include 'common'
+include 'server'
+include 'client'
