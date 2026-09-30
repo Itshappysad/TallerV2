@@ -10,6 +10,10 @@ subprojects {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+    // Las fuentes contienen tildes y eñes: compilar siempre en UTF-8
+    tasks.withType(JavaCompile).configureEach {
+        options.encoding = 'UTF-8'
+    }
     dependencies {
         implementation 'com.zeroc:ice:3.7.10'
     }

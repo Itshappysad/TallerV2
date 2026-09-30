@@ -1,0 +1,14 @@
+plugins {
+    id 'application'
+}
+dependencies {
+// Vincula las clases generadas por Slice desde el modulo common
+    implementation project (':common')
+}
+application {
+    mainClass = 'chat.client.ClientMain'
+}
+// La CLI lee comandos del teclado: conectar la entrada estandar al proceso
+tasks.named('run') {
+    standardInput = System.in
+}
