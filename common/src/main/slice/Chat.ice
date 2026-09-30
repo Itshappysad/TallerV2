@@ -1,3 +1,5 @@
+#pragma once
+
 module ChatApp {
 
     // Estructura que modela un mensaje del chat
